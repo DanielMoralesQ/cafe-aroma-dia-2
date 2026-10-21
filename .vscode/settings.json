@@ -1,0 +1,8 @@
+{
+    "editor.suggestSelection": "first",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "on"
+    }
+}

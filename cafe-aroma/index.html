@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Bienvenido a Café Aroma, donde la pasión por el café se encuentra con la excelencia en cada taza. Descubre nuestro menú y disfruta de una experiencia única.">
+  <title>Café Aroma - donde el café es la especialidad</title>
+</head>
+
+<body>
+  <header>
+    <a href="#inicio">
+      <img src="img/logo-cafe.svg" alt="Logo Café Aroma - ir al inicio">
+    </a>
+    <h1>Café Aroma</h1>
+    <nav aria-label="" Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+
+    <!-- Sección de presentación -->
+    <section id="inicio">
+      <h1>Café de especialidad para disfrutar sin prisa</h1>
+      <p>
+        En Café Aroma preparamos cada taza con granos de origen colombiano,
+        tostados en pequeños lotes y servidos con postres artesanales.
+      </p>
+      <p><a href="#contacto">Reservar una mesa</a></p>
+    </section>
+
+    <!-- Productos destacados -->
+
+    <section id="productos">
+      <h2>Nuestros favoritos</h2>
+      <p>Tres productos que nuestros clientes piden una y otra vez.</p>
+
+      <article>
+        <img src="img/cafe-1.svg" alt="Taza de café espresso humeante" width="600" height="400">
+        <h3>Espresso de origen</h3>
+        <p>Intenso, con notas a chocolate y caramelo. Elaborado con granos de Huila.</p>
+        <p><strong>$5.500</strong></p>
+      </article>
+
+      <article>
+        <img src="img/cafe-2.svg" alt="Croissant de mantequilla recién horneado" width="600" height="400">
+        <h3>Croissant de mantequilla</h3>
+        <p>Hojaldrado y crujiente, horneado cada mañana en nuestra cocina.</p>
+        <p><strong>$7.000</strong></p>
+      </article>
+
+      <article>
+        <img src="img/cafe-3.svg" alt="Granos de café tostado" width="600" height="400">
+        <h3>Café en grano 250 g</h3>
+        <p>Para preparar en casa. Tostión media, ideal para prensa francesa.</p>
+        <p><strong>$28.000</strong></p>
+      </article>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre nosotros</h2>
+      <p>
+        Café Aroma nació en 2018 con una idea sencilla: ofrecer un lugar tranquilo
+        donde el café se prepare con cuidado y se comparta con calma.
+      </p>
+      <p>
+        Trabajamos directamente con caficultores y tostamos en pequeñas cantidades
+        para que cada taza conserve todo su aroma.
+      </p>
+
+      <aside>
+        <h3>Horarios</h3>
+        <ul>
+          <li>Lunes a viernes: 7:00 a. m. a 7:00 p. m.</li>
+          <li>Sábados: 8:00 a. m. a 8:00 p. m.</li>
+          <li>Domingos: 8:00 a. m. a 2:00 p. m.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Reserva tu mesa</h2>
+      <p>Déjanos tus datos y te confirmaremos por correo o teléfono. Los campos con * son obligatorios.</p>
+
+      <form action="#" method="post">
+        <p>
+          <label for="nombre">Nombre completo *</label><br>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej.: Ana Gómez" required minlength="3">
+        </p>
+        <p>
+          <label for="correo">Correo electrónico *</label><br>
+          <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+        </p>
+        <p>
+          <label for="telefono">Teléfono celular (10 dígitos)</label><br>
+          <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="3001234567">
+        </p>
+        <p>
+          <label for="fecha">Fecha de la reserva</label><br>
+          <input type="date" id="fecha" name="fecha">
+        </p>
+        <p>
+          <label for="personas">Número de personas (1 a 12)</label><br>
+          <input type="number" id="personas" name="personas" min="1" max="12" value="2">
+        </p>
+        <p>
+          <label for="motivo">Motivo</label><br>
+          <select id="motivo" name="motivo">
+            <option value="reserva">Reserva de mesa</option>
+            <option value="evento">Evento privado</option>
+            <option value="otro">Otro</option>
+          </select>
+        </p>
+        <p>
+          <label for="mensaje">Mensaje</label><br>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas"></textarea>
+        </p>
+        <p>
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto">Acepto el tratamiento de mis datos *</label>
+        </p>
+        <button type="submit">Enviar solicitud</button>
+      </form>
+    </section>
+    
+    <!-- Carta de bebidas -->
+     
+    <section id="menu">
+      <h2>Carta de bebidas</h2>
+      <table>
+        <caption>Bebidas calientes y frías de Café Aroma</caption>
+        <thead>
+          <tr>
+            <th scope="col">Bebida</th>
+            <th scope="col">Tamaño</th>
+            <th scope="col">Precio (COP)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Espresso</td>
+            <td>90 ml</td>
+            <td>$5.500</td>
+          </tr>
+          <tr>
+            <td>Americano</td>
+            <td>240 ml</td>
+            <td>$6.500</td>
+          </tr>
+          <tr>
+            <td>Capuchino</td>
+            <td>240 ml</td>
+            <td>$8.500</td>
+          </tr>
+          <tr>
+            <td>Chocolate caliente</td>
+            <td>240 ml</td>
+            <td>$9.000</td>
+          </tr>
+          <tr>
+            <td>Café frío con vainilla</td>
+            <td>350 ml</td>
+            <td>$10.500</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Todos los precios incluyen impuestos.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <aside>
+      
+    </aside>
+  </main>
+
+  <!-- Información adicional -->
+
+  <footer>
+    <p>&copy; 2026 Café Aroma. Todos los derechos reservados.</p>
+    <address>Carrera 10 # 20-30, Bogotá &middot; <a href="mailto:hola@cafearoma.example">hola@cafearoma.example</a>
+    </address>
+  </footer>
+
+</body>
